@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #00C9A7;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+/* container-1 */
+.container-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: 2px solid rgb(179, 179, 179);
+    height: 100vh;
+    padding: 30px;
+}
+.container-1 h1{
+    font-size: 2.3rem;
+    letter-spacing: 20px;
+    font-weight: 900;
+}
+.container-1 h1::first-letter{
+    font-size: 3.5rem;
+    color: greenyellow;
+}
+textarea{
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+textarea:focus{
+    outline: none;
+}
+#add-btn{
+    padding: 10px;
+    margin: 20px;
+    background-color: #1f3430;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
+
+
+/* container-2 */
+.container-2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notesHolder{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+#new-text{
+    margin: 20px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 3px;
+    font-weight: 900;
+    height: 200px;
+    background: none;
+    color: black;
+    font-weight: 900;
+    border: none;
+    background:white;
+}
+
+#empty-text{
+    font-size: 4rem;
+    color: grey;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    left: 100px;
+}
+img{
+    width: 20px;
+    position: relative;
+    top: 55px;
+    left: -55px; 
+}
+
+
+@media screen and (max-width: 578px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        padding: 50px;
+        border-right: none;
+    }
+    #textarea{
+        width: 100%;
+        height: auto;
+    }
+    .container-2{
+        height: 50vh;
+    }
+    #new-text{
+        width: auto;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    #empty-text{
+        position: relative;
+        left: 0;
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: lowercase;
+        
+    }
+    .container-1 h1{
+        text-align: start;
+    }
+    img{
+        position: relative;
+        left: -50px;
+        top: 20px;
+        padding: 3px;
+        border-radius: 4px;
+    }
+}
